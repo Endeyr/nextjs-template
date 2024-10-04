@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nextjs React Template
+
+This template is a modern React setup following best practices for front-end development. 
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+   ```nodejs
+    git clone https://github.com/Endeyr/nextjs-template
+   ```
+
+2. Install dependencies:
+
+   ```nodejs
+    pnpm install
+   ```
+
+3. Run the development server:
+   ```nodejs
+   pnpm run dev
+   ```
+   The application will be available at http://localhost:3000.
+
+## Scripts
+
+- pnpm dev: Starts the development server.
+- pnpm build: Builds the app for production.
+- pnpm start: Runs the production build.
+- pnpm lint: Runs ESLint to check for code quality and style issues.
+- pnpm test: Runs the test suite using Jest.
+- pnpm test:watch: Runs the test suite in watch mode, rerunning tests upon file changes.
+
+## Dependencies
+
+The project uses the following main dependencies:
+
+- Next.js: A React framework for high-quality web applications.
+- React: A JavaScript library for building user interfaces.
+- Axios: A promise-based HTTP client for making API requests.
+- React Hook Form: A library for managing forms in React with minimal re-rendering.
+- SWR: A library for data fetching.
+- Zod: A TypeScript-first schema declaration and validation library.
+- Tailwind CSS: A utility-first CSS framework for rapid UI development.
+
+## Dev Dependencies
+
+The development dependencies include tools and libraries to aid in development:
+
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
+- ESLint: A tool for identifying and fixing problems in JavaScript code.
+- Jest: A testing framework for JavaScript and TypeScript.
+- Testing Library: A family of libraries to test UI components. 
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+./
+├── app/ # Nextjs root dir
+├── components/ # Reusable React components
+├── lib/ # Utility functions and helpers
+├── schema/ # Zod schemas for react hook form
+├── types/ # Global types
+├── app/__test__/ # Jest test
+├── app/globals.css # Main styling
+├── app/layout.tsx # Providers and layout
+└── app/page.tsx # Entry point for the App
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
