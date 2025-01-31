@@ -10,8 +10,8 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"prepare": "husky",
-    "format": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+		"format": "prettier --check --ignore-path .gitignore .",
+		"format:fix": "prettier --write --ignore-path .gitignore ."
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.10.0",
@@ -29,6 +29,8 @@
 		"zod-validation-error": "^3.4.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^19.6.1",
+		"@commitlint/config-conventional": "^19.6.0",
 		"@eslint/eslintrc": "^3",
 		"@testing-library/dom": "^10.4.0",
 		"@testing-library/jest-dom": "^6.6.3",
