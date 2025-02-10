@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJs Template
+
+This template is a modern [Next.js](https://nextjs.org) setup follwing best practices for web development. It utilizes popular libraries such as zod and react hook forms to improve the UX and UI. 
 
 ## Getting Started
 
-First, run the development server:
+1. Create with template:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```nodejs
+npx create-next-app@latest <project-name> -e "https://github.com/Endeyr/nextjs-template"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies: 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```nodejs
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the development server:
 
-## Learn More
+```nodejs
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- dev # Starts the development server
+- build # Builds the application for production.
+- start # Initiates the production server for your application.
+- lint # Runs ESLint to check for code quality and style issues.
+- test # Runs the test suite using Jest.
+- test:watch # Runs the test suite using Jest and runs on changes.
+- prepare # Runs husky prepare for first time setup.
+- format # Runs Prettier to format code based on config.
+- format:fix # Runs Prettier and changes code to fit config format.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Dependencies
 
-## Deploy on Vercel
+The project uses the following main dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- React # A JavaScript library for building user interfaces.
+- React-Hook-Form # A library for managing forms in React with minimal re-rendering.
+- Zod # A TypeScript-first schema declaration and validation library.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Dev Dependencies
+
+The development dependencies include tools and libraries to aid in development:
+
+- Eslint # A tool for identifying and fixing problems in JavaScript code.
+- Testing-library # A family of libraries to test UI components.
+- Husky # A tool for improving git hooks.
+- Jest # A testing framework for React applications.
+- Prettier # An opinionated code formatter.
+- Tailwindcss # A utility-first CSS framework for rapid UI development.
+- Typescript # A typed superset of JavaScript that compiles to plain JavaScript.
+
+## Project Structure
+
+```bash
+├── app/ # Next.js App Router (pages, layouts, and route handlers)
+├── components/ # Reusable UI components
+├── data/ # Static data files and mock data
+├── hooks/ # Custom React hooks
+├── lib/ # Third-party library integrations/initializations
+├── providers/ # React context providers
+├── public/ # Static assets (images, fonts, etc.)
+├── services/ # API services and external service integrations
+├── types/ # TypeScript type definitions
+├── utils/ # Utility functions and helpers
+├── jest.config.ts # Jest testing configuration
+└── __test__ # Test files directory
+```
+
+## License
+
+This project is licensed under the MIT License.
