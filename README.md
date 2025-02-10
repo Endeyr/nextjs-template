@@ -69,6 +69,7 @@ The development dependencies include tools and libraries to aid in development:
 ├── utils/ # Utility functions and helpers
 ├── jest.config.ts # Jest testing configuration
 ├── components.json # Setup file for ShadCn UI Library
+├── __mocks__ # Mock data for testing
 └── __test__ # Test files directory
 ```
 
