@@ -68,6 +68,7 @@ The development dependencies include tools and libraries to aid in development:
 ├── types/ # TypeScript type definitions
 ├── utils/ # Utility functions and helpers
 ├── jest.config.ts # Jest testing configuration
+├── components.json # Setup file for ShadCn UI Library
 └── __test__ # Test files directory
 ```
 
